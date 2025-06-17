@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url('../imagens/pexels-maksgelatin-5995230.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+#formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+
+}
