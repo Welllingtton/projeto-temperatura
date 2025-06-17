@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 * {
+    font-family: 'Poppins';
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background: url('../imagens/pexels-maksgelatin-5995230.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: black url('../imagens/pexels-maksgelatin-5995230.jpg') no-repeat;
     background-size: cover;
     
 }
@@ -15,9 +18,47 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.877);
     width: 400px;
     height: 250px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.637);
     transform: translate(-50%, -50%);
+    
+}
 
+#formulario > h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+#dados {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+
+}
+
+#dados > input {
+    width: 250px;
+    height: 30px;
+}
+
+#fahr {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.3rem;
+}
+
+#btn {
+    text-align: center;
+
+}
+
+#res {
+    display: inline-block;
+    background-color: white;
+    width: 215px;
+    height: 30px;
+    border: 1px solid black;
+    padding-top: ;
 }
