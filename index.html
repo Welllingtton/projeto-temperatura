@@ -33,7 +33,7 @@
         function converter() {
             let celsius = document.querySelector('#icelsius')
             let res = document.querySelector('#res')
-            let n1 = Number(icelsius.value)
+            let n1 = Number(celsius.value)
             let temp = (n1 * 9/5) + 32;
             res.innerHTML=`Sua temperatura em Fahrenheit é ${temp}`
         }
