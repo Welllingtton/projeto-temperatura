@@ -14,19 +14,19 @@
         <h2>Converta de Celsius para Fahrenheit</h2>
         <div >
             <form action="#" method="get" id="dados">
-                <label for="icelsius">Celsius</label>
+                <label for="icelsius">Celsius:</label>
                 <input type="number" name="celsius" id="icelsius">
             </form>
             <div id="fahr">
-                <p>Formulário</p>
-               <div id="res">
-        
-               </div>
+                Fahrenheit
+            </div>
+            <div id="res">
+    
             </div>
         </div>
         <div id="btn">
             <input type="submit" value="Converter" onclick="converter()">
-            <input type="reset" value="Limpar">
+            <input type="reset" value="Limpar" onclick="limpar()">
         </div>
     </section>
     <script>
@@ -35,7 +35,12 @@
             let res = document.querySelector('#res')
             let n1 = Number(celsius.value)
             let temp = (n1 * 9/5) + 32;
-            res.innerHTML=`Sua temperatura em Fahrenheit é ${temp}`
+            res.innerHTML=`Sua temperatura em Fahrenheit é ${temp}.`;    
+        }
+
+        function limpar() {
+            document.getElementById("icelsius").value = "";
+            res.innerHTML=``
         }
     </script>
 </body>
